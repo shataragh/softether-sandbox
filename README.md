@@ -1,6 +1,6 @@
 # 🛡️ SoftEther VPN Lab in GitHub Codespaces
 
-This project sets up a fully functional SoftEther VPN server inside GitHub Codespaces — complete with build-from-source, user creation, and optional stealth tunneling. To access "localhost:5555", you need an administrator password. For this purpose, ask Sirvan for this at this address "https://www.linkedin.com/in/sir1/"
+This project sets up a fully functional SoftEther VPN server inside GitHub Codespaces — complete with build-from-source, user creation, and optional stealth tunneling. To access `localhost:5555`, you need an administrator password. For this purpose, ask Sirvan via this address "https://www.linkedin.com/in/sir1/"
 
 ## 📦 Features
 
