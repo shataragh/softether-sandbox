@@ -1,8 +1,8 @@
 
 # 🛡️ Security Notes
-```markdown
-This lab is designed for controlled and ethical sandbox testing.
 
+This lab is designed for controlled and ethical sandbox testing.
+```markdown
 ## 🔒 Recommendations
 
 - Rotate all credentials periodically
