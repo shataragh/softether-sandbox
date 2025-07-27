@@ -10,14 +10,18 @@ Use the `stealth-wrapper.sh` script to launch different obfuscation modes. Each 
 
 ### 🕵️‍♂️ Available Modes
 
+
+#### 🦎 Launch obfs4proxy to disguise VPN traffic
 ```bash
-# 🦎 Launch obfs4proxy to disguise VPN traffic
 bash tools/stealth-wrapper.sh --obfs4
+```
 
-# 🔐 Add SSL/TLS layer using stunnel
+#### 🔐 Add SSL/TLS layer using stunnel
+```bash
 bash tools/stealth-wrapper.sh --stunnel
-
-# 🌐 Connect VPN via browser-mimicking WebSocket wrapped in TLS
+```
+#### 🌐 Connect VPN via browser-mimicking WebSocket wrapped in TLS
+```bash
 bash tools/stealth-wrapper.sh --wss
 ```
 
