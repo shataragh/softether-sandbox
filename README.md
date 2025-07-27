@@ -1,31 +1,32 @@
 # 🛡️ SoftEther VPN Lab in GitHub Codespaces
 
 [![Codespaces Ready](https://img.shields.io/badge/GitHub-Codespaces-blue?logo=github)](https://github.com/features/codespaces)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Security Status](https://img.shields.io/badge/Security-Proactive-red?logo=security)](https://www.linkedin.com/in/sir1/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
+[![Security Status](https://img.shields.io/badge/Security-Proactive-red?logo=security)](SECURITY.md)
 
-Run a full-featured SoftEther VPN server inside GitHub Codespaces — complete with source build, CLI management, and optional stealth tunneling.  
-This lab is tailored for developers working under censorship, privacy risk, or sandbox experimentation.
+Deploy a full-featured SoftEther VPN server inside GitHub Codespaces — complete with CLI management, source build, and optional stealth tunneling.
+
+🔐 Tailored for developers in censorship-prone regions or privacy-first sandbox setups.
 
 ---
 
 ## 📸 Preview
 
 ![SoftEther Codespace Demo](https://uploadkon.ir/uploads/524b08_25VPN.png)  
-> _SoftEther VPN server with stealth-ready features running fully inside Codespaces_
+> _SoftEther VPN server with stealth extensions running inside GitHub Codespaces_
 
 ---
 
 ## 🚀 Table of Contents
 
-- [Features](#-features)
-- [Quick Start](#-quick-start)
-- [Usage Guide](#-usage-guide)
-- [Advanced Configuration](#-advanced-configuration)
-- [Security Notes](#-security-notes)
-- [Known Limitations](#-known-limitations)
-- [License](#-license)
-- [Credits & Contact](#-credits--contact)
+- [✅ Features](#features)
+- [🧰 Quick Start](#quick-start)
+- [📕 Usage Guide](USAGE.md)
+- [⚙️ Advanced Configuration](ADVANCED-CONFIG.md)
+- [🛡️ Security Notes](SECURITY.md)
+- [⚠️ Known Limitations](LIMITATIONS.md)
+- [📄 License](LICENSE.md)
+- [👤 Credits & Contact](CONTACT.md)
 
 ---
 
@@ -33,28 +34,29 @@ This lab is tailored for developers working under censorship, privacy risk, or s
 
 | Feature | Description |
 |--------|-------------|
-| ✅ VPN over Codespaces | SoftEther built from source, hosted inside GitHub IDE |
-| 🧑‍💻 CLI management (`vpncmd`) | Create hubs, users, enable SecureNAT |
-| 🕵️‍♂️ Stealth-ready tunnels | Optional: `stunnel`, `obfs4proxy`, WebSocket over TLS |
-| 🔐 Admin-restricted access | Password-protected `localhost:5555` connection |
-| 📄 Inline Documentation | Everything inside one Markdown file for clarity |
-| 🔄 Reproducible Workflow | No external configs or setup scripts required |
+| 🧑‍💻 CLI VPN Management | Configure hubs and users via `vpncmd` |
+| 🕵️ Stealth Tunneling | Enable `obfs4`, `stunnel`, WebSocket over TLS |
+| 🔐 Secure Admin Entry | Password-protected `localhost:5555` |
+| 💡 GitHub Codespaces-Ready | No external scripts or GUI dependencies |
+| 🔄 Reproducible Builds | CMake + submodules for consistent setup |
 
 ---
 
 ## 🧰 Quick Start
 
+Get up and running inside GitHub Codespaces or locally:
+
 ```bash
-# Clone & enter repo
+# Clone repo and enter
 git clone https://github.com/shataragh/softether-sandbox.git
 cd softether-sandbox/SoftEtherVPN
 
-# Initialize and build
+# Init and compile
 git submodule update --init --recursive
 ./configure
 make -C build
 
-# Launch SoftEther Server & CLI
+# Launch VPN server and CLI
 cd build
 ./vpnserver start
 ./vpncmd
