@@ -21,7 +21,7 @@ bash tools/stealth-wrapper.sh --stunnel
 bash tools/stealth-wrapper.sh --wss
 ```
 
-# 📗 Usage Instructions
+## 📗 Usage Instructions
 To view chaining options, proxy layering, and advanced help:
 
 ```bash
